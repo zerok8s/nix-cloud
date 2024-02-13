@@ -21,9 +21,11 @@
           gh
           gnumake
           gnused
+          google-cloud-sql-proxy
           helmfile
           htop
           jq
+          k6
           k9s
           kubectl
           kubectx
@@ -54,7 +56,7 @@
             shellHook = ''
                 shopt -s histappend
                 PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
-                export PS1='\[\033[01;32m\][\D{%m-%d×%H:%M:%S}]cloud\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+                export PS1='\[\033[01;32m\][\D{%m-%d×%H:%M:%S}]nix-cloud\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
             '';
 	    };
       }
