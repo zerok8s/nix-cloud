@@ -8,6 +8,7 @@ $ mkdir -p ~/.config/nix && echo "experimental-features = nix-command flakes" >>
 ### install git to host machine
 ```shell
 $ nix profile install nixpkgs#git --extra-experimental-features nix-command flakes
+$ nix profile install nixpkgs#direnv
 ```
 
 ### update packages
