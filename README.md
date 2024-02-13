@@ -2,7 +2,7 @@
 
 ### enable experimental features
 ```shell
-$ echo "experimental-features = nix-command flakes" | sudo tee /etc/nix/nix.conf
+$ mkdir -p ~/.config/nix && echo "experimental-features = nix-command flakes" >> ~/.config/nix/nix.conf
 ```
 
 ### install git to host machine
