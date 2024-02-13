@@ -9,3 +9,10 @@ $ echo "experimental-features = nix-command flakes" | sudo tee /etc/nix/nix.conf
 ```shell
 $ nix profile install nixpkgs#git --extra-experimental-features nix-command flakes
 ```
+
+### update packages
+```shell
+$ nix-channel --update
+```
+
+
