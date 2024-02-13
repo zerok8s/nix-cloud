@@ -13,7 +13,9 @@ $ nix profile install nixpkgs#direnv
 
 ### update packages
 ```shell
+$ nix-channel --add https://nixos.org/channels/nixpkgs-unstable
 $ nix-channel --update
+$ nix flake update .
 ```
 
 
