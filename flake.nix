@@ -35,6 +35,7 @@
             plugins = [
               pkgs.kubernetes-helmPlugins.helm-secrets
               pkgs.kubernetes-helmPlugins.helm-diff
+              pkgs.kubernetes-helmPlugins.helm-unittest
             ];
           })
           less
@@ -60,8 +61,8 @@
           shellHook = ''
             shopt -s histappend
             PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
-            export PS1='\[\033[01;32m\][\D{%m-%d×%H:%M:%S}]nix-cloud\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-          '';
+            PS1='\[\033[01;32m\][\D{%m-%d×%H:%M:%S}]nix-cloud\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+        '';
         };
       }
     );
