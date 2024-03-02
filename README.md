@@ -18,4 +18,9 @@ $ nix-channel --update
 $ nix flake update .
 ```
 
-
+### fix locales
+```shell
+$ sudo update-locale LC_ALL=
+$ sudo locale-gen en_US.UTF-8
+$ sudo dpkg-reconfigure locales
+```
